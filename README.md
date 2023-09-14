@@ -1,4 +1,4 @@
-<h1> grosse bite</h1>
+<h1> Morpion</h1>
 Projet : Réalisation d’un morpion en Python
 
 Critères : 
