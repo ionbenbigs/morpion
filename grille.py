@@ -1,15 +1,21 @@
-grille = [[1,2,3],
-          [4,5,6],
-          [7,8,9]]
+'''print('[-][-][-]\n[-][-][-]\n[-][-][-]')'''
 
-def print_grid(grid):
-    """
-        Print grid in the console
-        @param grid (list): grid
-    """
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            print(f"[{grid[i][j]}]", end=" ")
-        print("")
+class Grille:
+    def __init__( self , taillex , tailley ):
+        self.taillex = taillex
+        self.tailley = tailley
+        self.grille = []
+        self.creer_grille()
 
-print_grid(grille)
+    
+    def creer_grille(self):
+        icone = 'X'
+        for i in range (self.taillex):
+            ligne=[]
+            for j in range(self.tailley):                         
+                ligne.append(icone)
+            self.grille.append(ligne)
+
+
+g = Grille(3,3)
+print(g.grille)
