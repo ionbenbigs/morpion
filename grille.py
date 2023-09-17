@@ -4,11 +4,7 @@ class Grille:
         self.tailley = tailley
         self.grille = []
         self.creer_grille()
-<<<<<<< HEAD
         self.afficher_grille()
-=======
-        self.affichage_grille()
->>>>>>> a89406d0bd83b071e13769f74bae2d40c650e67d
 
     
     def creer_grille(self):
@@ -18,9 +14,7 @@ class Grille:
             for j in range(self.tailley):                         
                 ligne.append(icone)
             self.grille.append(ligne)
-    
 
-<<<<<<< HEAD
     def afficher_grille(self):
         icone = 1
         
@@ -30,14 +24,6 @@ class Grille:
                 print(f"[{icone}]",end= "")
                 icone+=1
             print('')    
-=======
-    def affichage_grille(self):
-        pass
 
-
->>>>>>> a89406d0bd83b071e13769f74bae2d40c650e67d
 g = Grille(3,3)
 
-# [X] [X] [X]
-# [X] [X] [X]
-# [X] [X] [X]
