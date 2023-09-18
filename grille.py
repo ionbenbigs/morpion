@@ -1,3 +1,4 @@
+from jeton import Jeton
 class Grille:
     def __init__( self , taillex , tailley ):
         self.taillex = taillex
@@ -8,11 +9,11 @@ class Grille:
 
     
     def creer_grille(self):
-        icone = 'X'
+        jeton=Jeton()
         for i in range(self.taillex):
             ligne=[]
             for j in range(self.tailley):                         
-                ligne.append(icone)
+                ligne.append(Jeton)
             self.grille.append(ligne)
 
     def afficher_grille(self):
@@ -26,4 +27,3 @@ class Grille:
             print('')    
 
 g = Grille(3,3)
-
