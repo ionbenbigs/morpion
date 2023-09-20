@@ -17,14 +17,10 @@ class Grille:
             self.grille.append(ligne)
         
 
-    def afficher_grille(self):
-        
+    def afficher_grille(self):   
         for p in range(self.taillex):
-            
             for h in range(self.tailley):
-                
                 print(f"[{self.grille[p][h].icone}]",end= "")
-
             print('')    
 
 g = Grille(3,3)
