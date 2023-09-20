@@ -13,17 +13,16 @@ class Grille:
         for i in range(self.taillex):
             ligne=[]
             for j in range(self.tailley):                         
-                ligne.append(Jeton)
+                ligne.append(jeton)
             self.grille.append(ligne)
+        
 
     def afficher_grille(self):
-        icone = 1
-        
         for p in range(self.taillex):
-            
             for h in range(self.tailley):
-                print(f"[{icone}]",end= "")
-                icone+=1
+                print(f"[{self.grille[0][0].icone}]",end= "")
             print('')    
 
 g = Grille(3,3)
+
+# [[][][]]
